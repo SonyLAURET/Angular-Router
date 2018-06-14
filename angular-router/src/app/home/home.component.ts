@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PATH_DETAIL, PATH_DETAIL_ID } from '../Const';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  idDetail:number=1;
+  constructor(private router:Router) { }
+  
+  navigateToDetail(){
+    this.router.navigate([PATH_DETAIL,this.idDetail]);
+  }
   ngOnInit() {
   }
 

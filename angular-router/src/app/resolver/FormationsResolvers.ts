@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from "@angular/router";
 import { Observable } from "rxjs";
-import { resolve } from "dns";
 import { Formation } from "../entity/formation";
 
 @Injectable()

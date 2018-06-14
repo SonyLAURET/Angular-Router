@@ -7,10 +7,16 @@
 </div>
 <nav class="nav">
   <span class="nav__menu">
-    <a href=""   [routerLink]="['/']">Home</a>
+    <a href=""   [routerLink]="['/']"> Home </a>
   </span>
   <span class="nav__menu">
-    <a href=""  [routerLink]="['/detail', idDetail]">Detail</a>
+    <a href=""  [routerLink]="['/detail', idDetail]"> Detail </a>
   </span>
+  <span class="nav__menu">
+      <a href=""  [routerLink]="['/detail', idDetail , 'formations']"> Formation </a>
+    </span>
+    <span class="nav__menu">
+        <a href=""  [routerLink]="['detail',idDetail,'connaissances']"> Connaissances </a>
+      </span>
 </nav>
 <router-outlet></router-outlet>

@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
 import { FormationsComponent } from './formations/formations.component';
 import { ConnaissancesComponent } from './connaissances/connaissances.component';
+import { FormationsResolvers } from './resolver/FormationsResolvers';
+
 
 @NgModule({
   declarations: [
@@ -15,13 +17,14 @@ import { ConnaissancesComponent } from './connaissances/connaissances.component'
     HomeComponent,
     DetailComponent,
     FormationsComponent,
-    ConnaissancesComponent
+    ConnaissancesComponent,
+   
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [FormationsResolvers],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
